@@ -68,43 +68,43 @@ const Navbar = () => {
           ))}
           {/* Like button with heart icon */}
           <li
-        className="flex items-center gap-2 cursor-pointer text-secondary hover:text-white"
-        onClick={handleLikeClick}  // Toggle like state on click
-      >
-        {/* Conditionally render outline or solid heart based on liked state */}
-        {liked ? (
-          <FaHeart className="h-6 w-6 text-red-500" />
-        ) : (
-          <FaRegHeart className="h-6 w-6 text-red-500" />
-        )}
-      </li>
+            className="flex items-center gap-2 cursor-pointer text-secondary hover:text-white"
+            onClick={handleLikeClick}  // Toggle like state on click
+          >
+            {/* Conditionally render outline or solid heart based on liked state */}
+            {liked ? (
+              <FaHeart className="h-6 w-6 text-red-500" />
+            ) : (
+              <FaRegHeart className="h-6 w-6 text-red-500" />
+            )}
+          </li>
         </ul>
 
         {/* Mobile Navigation */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
 
-         <div className='flex justify-center items-center gap-3'>
+          <div className='flex justify-center items-center gap-3'>
             {/* Like button with heart icon */}
             <div
-        className="flex items-center gap-2 cursor-pointer text-secondary hover:text-white"
-        onClick={handleLikeClick}  // Toggle like state on click
-      >
-        {/* Conditionally render outline or solid heart based on liked state */}
-        {liked ? (
-          <FaHeart className="h-6 w-6 text-red-500" />
-        ) : (
-          <FaRegHeart className="h-6 w-6 text-red-500" />
-        )}
-      </div>
+              className="flex items-center gap-2 cursor-pointer text-secondary hover:text-white"
+              onClick={handleLikeClick}  // Toggle like state on click
+            >
+              {/* Conditionally render outline or solid heart based on liked state */}
+              {liked ? (
+                <FaHeart className="h-6 w-6 text-red-500" />
+              ) : (
+                <FaRegHeart className="h-6 w-6 text-red-500" />
+              )}
+            </div>
 
-          <Image
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
-            onClick={() => setToggle(!toggle)}
-          />
-          
-         </div>
+            <Image
+              src={toggle ? close : menu}
+              alt="menu"
+              className="w-[28px] h-[28px] object-contain cursor-pointer"
+              onClick={() => setToggle(!toggle)}
+            />
+
+          </div>
 
           <div
             className={`
