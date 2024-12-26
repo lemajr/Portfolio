@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 import { HiOutlineUserGroup } from 'react-icons/hi';
+import NumberTicker from './ui/number-ticker';
 
 const Statistics = () => {
-  const [likes, setLikes] = useState(0);
+  const [likes, setLikes] = useState(50);
   const visitors = 1050;
 
   const handleLikeClick = () => setLikes((prevLikes) => prevLikes + 1);
@@ -26,14 +27,21 @@ const Statistics = () => {
           ) : (
             <FaRegHeart className="text-red-500 w-8 h-8 md:w-10 md:h-10" />
           )}
-          <span className="text-white text-lg font-medium max-md:text-2xl">
-            {likes} Likes
-          </span>
+        <div className=" text-white text-lg font-medium max-md:text-2xl">
+        <p className="whitespace-pre-wrap text-xl font-medium tracking-tighter text-white">
+            <NumberTicker value={likes} />
+        </p>
+        <span>Likes</span>
+        </div>
+
         </div>
         <div className="flex items-center gap-6">
           <HiOutlineUserGroup className="text-[#915EFF] w-8 h-8 md:w-10 md:h-10" />
           <span className="text-white text-lg font-medium max-md:text-2xl">
-            {visitors} Visitors
+          <p className="whitespace-pre-wrap text-xl font-medium tracking-tighter text-white">
+            <NumberTicker value={visitors} />
+        </p>
+            Visitors
           </span>
         </div>
       </div>
