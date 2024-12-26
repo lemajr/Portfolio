@@ -1,9 +1,9 @@
 'use client'
 import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-import CanvasLoader from "../Loader";
+// import CanvasLoader from "../Loader";
 
 const Earth = () => {
   // Add error handling for model loading

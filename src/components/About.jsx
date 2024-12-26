@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 import { services } from "@/constants";
 import { fadeIn, textVariant } from "@/utils/motion";
-import styles from "@/styles";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">

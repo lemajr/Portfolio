@@ -7,7 +7,7 @@ const Home = () => {
         <Navbar />
         <Hero />
       </div>
-      <About />
+      {/* <About />
       <Experience />
       <Tech />
       <Works />
@@ -15,7 +15,7 @@ const Home = () => {
       <div className="relative z-0">
         <Contact />
         <StarsCanvas />
-      </div>
+      </div> */}
     </div>
   );
 };
